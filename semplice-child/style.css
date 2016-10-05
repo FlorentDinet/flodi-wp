@@ -1,0 +1,307 @@
+/*
+	Theme Name: Flodi Semplice Child Theme
+	Description: Child Theme for Semplice
+	Author: Florent Dinet
+	Template: semplice
+*/
+
+
+/* Custom CSS Start */
+
+@media (max-width:767px) {
+    section#thumbnails .thumb.span8 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #fullscreen-menu .menu-container,
+    .container {
+        width: 1100px;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    .row {
+        margin-left: -40px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .span4 {
+        width: 340px;
+        margin-left: 40px;
+    }
+}
+
+@media (min-width:979px) and (max-width:1200px) {
+    .span4 {
+        width: 290px;
+        margin-left: 35px;
+    }
+}
+
+@media (min-width:768px) and (max-width:979px) {
+    .span4 {
+        margin-bottom: 20px;
+        width: 228px;
+    }
+}
+
+@media (max-width:767px) {
+    .span4 {
+        margin-bottom: 5%;
+        width: 47.5%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .span8 {
+        width: 720px;
+        margin-left: 40px;
+    }
+    .offset2 {
+        margin-left: 230px;
+    }
+}
+
+@media (min-width:979px) and (max-width:1200px) {
+    .span8 {
+        width: 614px;
+        margin-left: 35px;
+    }
+    .offset2 {
+        margin-left: 180px;
+    }
+}
+
+@media (min-width:768px) and (max-width:979px) {
+    .span8 {
+        width: 476px;
+        margin-left: 20px;
+    }
+    .offset2 {
+        margin-left: 144px;
+    }
+}
+
+@media (max-width:567px) {
+    .span8 {
+        width: 100%;
+        margin-left: 0;
+    }
+    .offset2 {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .span12 {
+        width: 1100px;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .grid-sizer {
+        width: 55px;
+    }
+}
+
+@media (min-width:979px) and (max-width:1200px) {
+    .grid-sizer {
+        width: 46px;
+    }
+}
+
+@media (min-width:768px) and (max-width:979px) {
+    .grid-sizer {
+        width: 42px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .gutter-sizer {
+        width: 40px;
+    }
+}
+
+@media (min-width:979px) and (max-width:1200px) {
+    .gutter-sizer {
+        width: 35px;
+    }
+}
+
+@media (min-width:768px) and (max-width:979px) {
+    .gutter-sizer {
+        width: 20px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    section#thumbnails .thumb {
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width:979px) and (max-width:1200px) {
+    section#thumbnails .thumb {
+        margin-bottom: 35px;
+    }
+}
+
+nav.standard {
+    display: block;
+}
+
+#navbar .controls .menu-responsive {
+    display: none;
+}
+
+#navbar .nav-wrapper {
+    width: auto;
+}
+
+#navbar .fluid-menu {
+    width: auto;
+}
+
+@media (max-width: 767px) {
+    #navbar .fluid-container {
+        width: auto;
+        margin-left: 0;
+        left: 40px !important;
+        right: 40px !important;
+    }
+}
+
+@media (max-width: 567px) {
+    #navbar .fluid-container {
+        width: 90%;
+        margin-left: 5%;
+        left: 0 !important;
+        right: 0 !important;
+    }
+    #navbar .fluid-fourty #logo,
+    #navbar .fourty #logo {
+        padding-top: 20px;
+    }
+    .menu-style-nobutton ul li a,
+    nav.standard ul li a {
+        line-height: 84px !important;
+    }
+    nav.standard ul li a {
+        padding: 0px 10px;
+    }
+}
+
+nav.standard ul li a {
+    opacity: 1;
+}
+
+nav.standard ul li a:hover {
+    opacity: .4;
+}
+
+#fullscreen-menu .menu-inner nav ul li.current-menu-item a,
+#fullscreen-menu .menu-inner nav ul li.current_page_item a,
+nav.standard ul li.current-menu-item a,
+nav.standard ul li.current_page_item a,
+#fullscreen-menu .menu-inner nav ul li.current-menu-item a:hover,
+#fullscreen-menu .menu-inner nav ul li.current_page_item a:hover,
+nav.standard ul li.current-menu-item a:hover,
+nav.standard ul li.current_page_item a:hover,
+.is-work nav.standard ul li.portfolio-grid a,
+.is-work #fullscreen-menu .menu-inner nav ul li.portfolio-grid a {
+    opacity: .4;
+    pointer-events: none;
+    cursor: default;
+}
+
+nav.standard ul li:last-child a {
+    padding-right: 0;
+}
+
+
+/* RollOver des thumb sur la home */
+
+section#thumbnails .thumb .thumb-inner .thumb-hover {
+    z-index: 10;
+    display: none;
+}
+
+section#thumbnails .thumb .thumb-inner img {
+    z-index: 9;
+}
+
+section#thumbnails .thumb .thumb-inner img {
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+section#thumbnails .thumb .thumb-inner .thumb-hover h3 {
+    background-color: black;
+}
+
+section#thumbnails .thumb .thumb-inner:hover img {
+    opacity: .2
+}
+
+.bold,
+.wysiwyg-ce h1,
+.wysiwyg-ce h2,
+.wysiwyg-ce h3,
+.wysiwyg-ce h4,
+.wysiwyg-ce h5,
+.wysiwyg-ce h6,
+#semplice h1,
+#semplice h2,
+#semplice h3,
+#semplice h4,
+#semplice h5,
+#semplice h6 {
+    font-family: "Campton-Bold", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.to-the-top a {
+    padding: 0;
+    line-height: 0;
+}
+
+@media (max-width:767px) {
+    .to-the-top {
+        bottom: 40px;
+        right: 40px
+    }
+}
+
+@media (max-width:567px) {
+    .to-the-top {
+        bottom: 20px;
+        right: 5%
+    }
+}
+
+.to-the-top a:hover {
+    opacity: .4;
+    transform: none;
+    -ms-transform: none;
+    -webkit-transform: none
+}
+
+.fullscreen-cover .see-more .icon {}
+
+.fullscreen-cover .see-more:hover .icon {
+    opacity: .4;
+    transform: none;
+    -ms-transform: none;
+    -webkit-transform: none
+}
+
+
+/* Custom CSS End */
